@@ -1,18 +1,20 @@
 <table summary="Book form fields">
-    <tr>
+  <tr>
     <th>Title</th>
     <td><%= f.text_field(:title) %></td>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
     <th>Author</th>
     <td><%= f.text_field(:author) %></td>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
     <th>Price</th>
     <td><%= f.text_field(:price) %></td>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
     <th>Published Date</th>
-    <td><%= f.text_field(:published_date) %></td>
-    </tr>
+    <td>
+      <%= f.date_select(:published_date, start_year: 1900, end_year: Date.today.year, prompt: { day: 'Select Day', month: 'Select Month', year: 'Select Year' }) %>
+    </td>
+  </tr>
 </table>

@@ -4,13 +4,11 @@
   <h2>Add a New Book</h2>
 
   <%= form_for(@book) do |f| %>
-    <% # url: books_path, method: 'post' %>
 
-    <%= render(partial: "form", locals: {f:f})%>
+    <%= render partial: "form", locals: { f: f } %>
 
     <div class="form-buttons">
       <%= f.submit("Add Book") %>
     </div>
-
   <% end %>
 </div>
