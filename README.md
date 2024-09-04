@@ -1,1 +1,2 @@
-# book_collection_2
+# book_collection
+Repo that contains my book collection app

@@ -1,0 +1,18 @@
+<%= link_to("Back to Book List (Homepage)", books_path, class: 'back-link') %>
+
+<div class="book show">
+  <h2>Show Book</h2>
+
+  <div class="actions">
+    <%= link_to('Edit', edit_book_path(@book)) %>
+    <%= link_to('Delete', delete_book_path(@book)) %>
+  </div>
+
+  <table summary="Book detail view">
+    <tr>
+      <th>Title</th>
+      <td><%= @book.title %></td>
+    </tr>
+  </table>
+
+</div>
